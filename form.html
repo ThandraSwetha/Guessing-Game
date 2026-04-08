@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Table and Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        form {
+            width: 50%;
+            margin: 30px auto;
+            padding: 15px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Data Table</h2>
+
+    <!-- Student Table -->
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rahul Sharma</td>
+            <td>CSE</td>
+            <td>3rd</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Ananya Singh</td>
+            <td>ECE</td>
+            <td>2nd</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Vikram Kumar</td>
+            <td>IT</td>
+            <td>4th</td>
+        </tr>
+    </table>
+
+    <!-- Input Form -->
+    <h2>Add New Student Entry</h2>
+
+    <form>
+        <label>Student ID:</label>
+        <input type="number" placeholder="Enter Student ID" required>
+
+        <label>Student Name:</label>
+        <input type="text" placeholder="Enter Student Name" required>
+
+        <label>Department:</label>
+        <input type="text" placeholder="Enter Department (CSE/ECE/IT)" required>
+
+        <label>Year:</label>
+        <input type="text" placeholder="Enter Year (1st/2nd/3rd/4th)" required>
+
+        <button type="submit">Submit Student Data</button>
+    </form>
+
+</body>
+</html>
